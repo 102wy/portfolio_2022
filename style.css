@@ -26,7 +26,10 @@
   font-weight: normal;
   font-style: normal;
 }
-@import url("http://fonts.cdnfonts.com/css/harmony-3");
+@font-face {
+  font-family: "HARMONY";
+  src: url("http://fonts.cdnfonts.com/css/harmony-3");
+}
 * {
   margin: 0;
   padding: 0;

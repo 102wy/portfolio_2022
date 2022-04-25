@@ -26,7 +26,8 @@
   font-weight: normal;
   font-style: normal;
 }
-@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@1,300&display=swap");
+@import url("http://fonts.cdnfonts.com/css/harmony-3");
+
 * {
   margin: 0;
   padding: 0;
@@ -47,6 +48,7 @@ h3,
 h4,
 h5 {
   font-family: "S-CoreDream-4Regular";
+  cursor: default;
 }
 .wrap {
   width: 100%;
@@ -126,7 +128,7 @@ h5 {
   transform-origin: 50%, 50%;
 }
 .text-box {
-  font-family: "Noto Serif Display", serif;
+  font-family: "HARMONY", sans-serif;
   text-align: center;
   position: absolute;
   right: 200px;
@@ -197,10 +199,10 @@ h5 {
 }
 #intro {
   width: 100%;
-  height: 450px;
 }
 #intro > .pagew {
-  padding: 5rem 0;
+  padding: 5rem 0 6rem 0;
+  display: block;
 }
 #intro h3 {
   font-size: 40px;
@@ -209,6 +211,8 @@ h5 {
 #intro p {
   font-size: 22px;
   font-family: "S-CoreDream-3Light";
+  line-height: 40px;
+  cursor: default;
 }
 #skill {
   background-color: #e9f7ff;
@@ -256,6 +260,9 @@ h5 {
 .fa-css3-alt {
   color: #1a73ba;
 }
+.fa-sass {
+  color: #c06c98;
+}
 .fa-js-square {
   color: #e5a228;
 }
@@ -275,6 +282,9 @@ h5 {
   font-size: 40px;
   padding: 2rem 0 3rem 0;
 }
+.hide {
+  display: none;
+}
 .work-container {
   width: 100%;
   display: flex;
@@ -287,8 +297,125 @@ h5 {
   height: 300px;
   background-color: #1a73ba;
   margin: 0.4rem 0;
+  position: relative;
+  cursor: pointer;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.work-container > li:hover .work-focus {
+  opacity: 1;
+}
+.work-container > li:nth-child(1) {
+  background: url("./images/works01.png");
+}
+.work-container > li:nth-child(2) {
+  background: url("./images/works02.png");
+}
+.work-container > li:nth-child(3) {
+  background: url("./images/works09.png");
+}
+.work-container > li:nth-child(4) {
+  background: url("./images/works03.png");
+}
+.work-container > li:nth-child(5) {
+  background: url("./images/works04.png");
+}
+.work-container > li:nth-child(6) {
+  background: url("./images/works05.png");
+}
+.work-container > li:nth-child(7) {
+  background: url("./images/works06.png");
+}
+.work-container > li:nth-child(8) {
+  background: url("./images/works07.png");
+}
+.work-container > li:nth-child(9) {
+  background: url("./images/works08.png");
 }
 .work-container > li > a {
+}
+.work-container > li > a > img {
+  z-index: -1;
+}
+.work-container > li > a > span {
+  background-color: #fff;
+  z-index: 9;
+  position: absolute;
+}
+.work-container > li > a > span:nth-child(1) {
+  width: 0;
+  height: 3px;
+  top: 10px;
+  left: 10px;
+  transition: all 1s;
+}
+.work-container > li > a > span:nth-child(2) {
+  width: 3px;
+  height: 0;
+  top: 10px;
+  right: 10px;
+  transition: all 1s;
+}
+.work-container > li > a > span:nth-child(3) {
+  width: 0;
+  height: 3px;
+  bottom: 10px;
+  right: 10px;
+  transition: all 1s;
+}
+.work-container > li > a > span:nth-child(4) {
+  width: 3px;
+  height: 0;
+  bottom: 10px;
+  left: 10px;
+  transition: all 1s;
+}
+.work-container > li:hover .work-content span:nth-child(2n) {
+  height: 280px;
+}
+.work-container > li:hover .work-content span:nth-child(2n-1) {
+  width: 430px;
+}
+.work-focus {
+  width: 100%;
+  height: 100%;
+  z-index: 13;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: all 0.6s ease-in;
+}
+.work-focus > h6 {
+  color: #fff;
+  text-align: center;
+  font-size: 3rem;
+  font-family: "S-CoreDream-4Regular";
+}
+.work-focus > p {
+  color: #fff;
+  text-align: center;
+  font-size: 1.3rem;
+}
+#works button {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 250px;
+  height: 40px;
+  border-radius: 20px;
+  border: 1.5px solid #445cb4;
+  color: #445cb4;
+  font-size: 1.2rem;
+  margin: 3rem 0;
+  background-color: #fff;
+  transition: all 0.3s ease-in;
+}
+#works button:hover {
+  background-color: #445cb4;
+  color: #fff;
+  cursor: pointer;
 }
 #contact {
   background-color: #e9f7ff;
@@ -311,6 +438,9 @@ h5 {
 #contact ul > li {
   padding: 1rem 0;
   cursor: pointer;
+}
+#contact ul > li:hover .f-c {
+  color: #445cb4;
 }
 #contact ul > li > a {
   display: flex;

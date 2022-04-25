@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>김원영 포트폴리오</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -13,11 +14,9 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="./script.js"></script>
     <link rel="stylesheet" href="./style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@1,300&display=swap"
-        rel="stylesheet" <script src="https://kit.fontawesome.com/09f8ab7eda.js" crossorigin="anonymous">
-    </script>
+    <script src="https://kit.fontawesome.com/09f8ab7eda.js" crossorigin="anonymous"></script>
+    <link href="http://fonts.cdnfonts.com/css/harmony-3" rel="stylesheet">
+
 </head>
 
 <body>
@@ -46,15 +45,15 @@
                 </ul>
                 <nav id="nav">
                     <ul>
-                        <li><a href="#">PROFILE</a></li>
-                        <li><a href="#">SKILL</a></li>
-                        <li><a href="#">WORKS</a></li>
-                        <li><a href="#">CONTACT</a></li>
+                        <li><a class="navbtn" href="#">PROFILE</a></li>
+                        <li><a class="navbtn" href="#">SKILL</a></li>
+                        <li><a class="navbtn" href="#">WORKS</a></li>
+                        <li><a class="navbtn" href="#">CONTACT</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
-        <section id="main">
+        <section id="main" class="pages1">
             <img src="./images/main.png" alt="메인이미지">
             <img src="./images/name.png" alt="돌아가는이미지" class="rotate">
             <div class="text-box" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="600">
@@ -70,12 +69,15 @@
             <div class="pagew">
                 <h3>I am</h3>
                 <p>
-                    안녕하세요 프론트엔드 개발자 김원영 입니다. <br>
-                    침구회사에서 MD로 일하면서 간단한 웹 디자인과
+                    안녕하세요 끊임없이 배우며 성장하는 김원영 입니다. <br>
+                    침구회사 MD로 일하면서 보조 업무로 간단한 웹 디자인과 퍼블리싱을 하며 웹 퍼블리셔에 관심이 생겼고 <br>
+                    그 길로 퍼블리셔에 대해 알아보다가 그린컴퓨터아트학원 디지털디자인 반응형 웹 디자인 & 웹퍼블리셔 디지털 인재 양성과정 수료 하게 되면서 <br>
+                    프론트엔드 개발자에 관심이 생겨 프론트엔드 개발자에 도전하게 되었습니다. <br>
+                    사용자가 사용하기 쉬운 웹을 만드는것이 목표인 저는 김원영 입니다.
                 </p>
             </div>
         </section>
-        <section id="skill">
+        <section id="skill" class="pages2">
             <div class="pagew">
                 <h3>SKILLS</h3>
                 <ul>
@@ -87,17 +89,22 @@
                     <li>
                         <i class="fa-brands fa-css3-alt"></i>
                         <span>CSS</span>
-                        <p>마크업,시멘틱태그를 이용한 뼈대구성</p>
+                        <p>배경 스타일링 , 텍스트 스타일링 등</p>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-sass"></i>
+                        <span>SCSS</span>
+                        <p>SCSS문법을 이용한 스타일링 , <br>변수선언 , @mixin 사용</p>
                     </li>
                     <li>
                         <i class="fa-brands fa-js-square"></i>
                         <span>JS</span>
-                        <p>마크업,시멘틱태그를 이용한 뼈대구성</p>
+                        <p>네비게이션 구성 , 탭메뉴 구현 등</p>
                     </li>
                     <li>
                         <i class="fa-brands fa-react"></i>
                         <span>React</span>
-                        <p>마크업,시멘틱태그를 이용한 뼈대구성</p>
+                        <p>React hook을 이용한 개발</p>
                     </li>
                     <li>
                         <svg fill="none" height="10rem" viewBox="0 0 512 512" width="10rem"
@@ -109,43 +116,141 @@
                                 fill="#fff" fill-rule="evenodd" />
                         </svg>
                         <span>TypeScript</span>
-                        <p>마크업,시멘틱태그를 이용한 뼈대구성</p>
-                    </li>
-                    <li>
-                        <i class="fa-brands fa-github"></i>
-                        <span>Github</span>
-                        <p>마크업,시멘틱태그를 이용한 뼈대구성</p>
+                        <p>React를 이용한 프로젝트에서 <br>Ts 사용 가능</p>
                     </li>
                 </ul>
             </div>
         </section>
-        <section id="works">
+        <section id="works" class="pages3">
             <div class="pagew">
                 <h3>WORKS</h3>
                 <ul class="work-container">
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
+                    <li>
+                        <a href="https://102wy.github.io/Clock/" target="_blank" class="work-content">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <div class="work-focus">
+                                <h6>Clock</h6>
+                                <p>html/css/js</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://102wy.github.io/youtube/" target="_blank" class="work-content">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <div class="work-focus">
+                                <h6>Youtube</h6>
+                                <p>React</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://102wy.github.io/nyoflix/" target="_blank" class="work-content">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <div class="work-focus">
+                                <h6>Nyoflix</h6>
+                                <p>React</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://102wy.github.io/hanam/" target="_blank" class="work-content">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <div class="work-focus">
+                                <h6>Hanam</h6>
+                                <p>html/css/js</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://102wy.github.io/stxconst/" target="_blank" class="work-content">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <div class="work-focus">
+                                <h6>STX const</h6>
+                                <p>html/css/js</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://102wy.github.io/gcon/" target="_blank" class="work-content">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <div class="work-focus">
+                                <h6>gcon</h6>
+                                <p>html/css/js</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="target hide">
+                        <a href="https://102wy.github.io/andbag/" target="_blank" class="work-content">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <div class="work-focus">
+                                <h6>andbag</h6>
+                                <p>html/css/js</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="target hide">
+                        <a href="https://102wy.github.io/loveholt/" target="_blank" class="work-content">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <div class="work-focus">
+                                <h6>loveholt</h6>
+                                <p>html/css/js</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="target hide">
+                        <a href="https://102wy.github.io/noelohills/" target="_blank" class="work-content">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <div class="work-focus">
+                                <h6>noelohills</h6>
+                                <p>html/css/js</p>
+                            </div>
+                        </a>
+                    </li>
                 </ul>
+                <button class="more">More</button>
             </div>
         </section>
-        <section id="contact">
+        <section id="contact" class="pages4">
             <div class="pagew">
                 <h3>CONTACT</h3>
                 <ul>
                     <li>
                         <a href="mailto:tser5@naver.com">
-                            <i class="fa-solid fa-envelope"></i>
-                            <p>tser5@naver.com</p>
+                            <i class="fa-solid fa-envelope f-c"></i>
+                            <p class="f-c">tser5@naver.com</p>
                         </a>
                     </li>
                     <li>
                         <a href="https://open.kakao.com/o/sRpfQRae" target="_blank">
-                            <i class="fa-solid fa-comment"></i>
-                            <p>KakaoTalk</p>
+                            <i class="fa-solid fa-comment f-c"></i>
+                            <p class="f-c">KakaoTalk</p>
                         </a>
                     </li>
                 </ul>

@@ -40,6 +40,7 @@
   text-decoration: none;
   color: #333;
   box-sizing: border-box;
+  font-size: 10px;
 }
 html {
   max-width: 1920px;
@@ -49,7 +50,6 @@ body {
   width: 100%;
   height: 100%;
   font-family: "S-CoreDream-2ExtraLight";
-  font-size: 16px;
 }
 h1,
 h2,
@@ -64,7 +64,7 @@ h5 {
   margin: 0 auto;
 }
 .pagew {
-  width: 1400px;
+  width: 140rem;
   margin: 0 auto;
 }
 .white {
@@ -113,6 +113,7 @@ h5 {
 #nav > ul > li > a {
   display: block;
   padding: 10px;
+  font-size: 1.6rem;
 }
 #nav > ul > li:hover {
   font-family: "S-CoreDream-4Regular";
@@ -237,7 +238,7 @@ h5 {
 #skill ul {
   display: flex;
   flex-direction: row;
-  width: 70%;
+  width: 80%;
   justify-content: space-evenly;
   flex-wrap: wrap;
   margin: 0 auto;
@@ -246,8 +247,9 @@ h5 {
 #skill ul > li {
   display: flex;
   flex-direction: column;
-  width: 33.333%;
+  width: 25%;
   padding: 2rem;
+  align-items: center;
 }
 #skill ul > li > i {
   font-size: 10rem;
@@ -263,6 +265,11 @@ h5 {
 }
 #skill ul > li > svg {
   margin: 0 auto;
+}
+#skill ul > li > img {
+  width: 10rem;
+  height: 10rem;
+  object-fit: cover;
 }
 .fa-html5 {
   color: #ff5723;
@@ -283,7 +290,59 @@ h5 {
   padding-top: 1rem;
   display: block;
 }
+#projects {
+  font-family: "S-CoreDream-4Regular";
+  cursor: default;
+}
+#projects > .pagew {
+  padding: 5rem 0;
+}
+#projects h3 {
+  font-size: 4rem;
+  padding: 2rem 0 3rem 0;
+}
+#projects h5 {
+  font-size: 2.5rem;
+  padding: 2rem 0 3rem 0;
+}
+#projects p {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+}
+.projects-container > li {
+  display: flex;
+  align-items: center;
+  padding: 4rem 0;
+}
+.projects-container .left {
+  width: 50%;
+  height: 100%;
+}
+.projects-container .left ul {
+  padding-left: 2rem;
+  padding-top: 1rem;
+}
+.projects-container .left ul li {
+  list-style: disc;
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+}
+.projects-container .right {
+  width: 50%;
+  height: 100%;
+  cursor: pointer !important;
+}
+.projects-container .right a {
+  cursor: pointer !important;
+  font-size: 0;
+}
+.projects-container .right a img {
+  width: 100%;
+  height: auto;
+  cursor: pointer !important;
+}
 #works {
+  background-color: #e9f7ff;
 }
 #works > .pagew {
   padding: 10rem 0;
@@ -291,9 +350,6 @@ h5 {
 #works h3 {
   font-size: 40px;
   padding: 2rem 0 3rem 0;
-}
-.hide {
-  display: none;
 }
 .work-container {
   width: 100%;
@@ -315,30 +371,21 @@ h5 {
   opacity: 1;
 }
 .work-container > li:nth-child(1) {
-  background: url("./images/works01.png");
-}
-.work-container > li:nth-child(2) {
-  background: url("./images/works02.png");
-}
-.work-container > li:nth-child(3) {
-  background: url("./images/works09.png");
-}
-.work-container > li:nth-child(4) {
   background: url("./images/works03.png");
 }
-.work-container > li:nth-child(5) {
+.work-container > li:nth-child(2) {
   background: url("./images/works04.png");
 }
-.work-container > li:nth-child(6) {
+.work-container > li:nth-child(3) {
   background: url("./images/works05.png");
 }
-.work-container > li:nth-child(7) {
+.work-container > li:nth-child(4) {
   background: url("./images/works06.png");
 }
-.work-container > li:nth-child(8) {
+.work-container > li:nth-child(5) {
   background: url("./images/works07.png");
 }
-.work-container > li:nth-child(9) {
+.work-container > li:nth-child(6) {
   background: url("./images/works08.png");
 }
 .work-container > li > a {
@@ -408,7 +455,7 @@ h5 {
   text-align: center;
   font-size: 1.3rem;
 }
-#works button {
+/* #works button {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -426,9 +473,8 @@ h5 {
   background-color: #445cb4;
   color: #fff;
   cursor: pointer;
-}
+} */
 #contact {
-  background-color: #e9f7ff;
 }
 #contact > .pagew {
   padding: 5rem 0;
@@ -472,4 +518,10 @@ h5 {
 #footer p {
   font-family: "S-CoreDream-1Thin";
   text-align: center;
+}
+
+@media all and (max-width: 1800px) {
+  .text-box span {
+    font-size: 6rem;
+  }
 }

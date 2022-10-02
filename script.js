@@ -21,11 +21,11 @@ window.onload = function () {
     });
   }
 
-  document.querySelector(".portfolio").addEventListener("click", (e) => {
-    e.preventDefault();
-    document.querySelector(".pages3").scrollIntoView({ behavior: "smooth" });
-  });
-  $(".more").click(function () {
-    $(".target").toggleClass("hide");
-  });
+  // document.querySelector(".portfolio").addEventListener("click", (e) => {
+  //   e.preventDefault();
+  //   document.querySelector(".pages3").scrollIntoView({ behavior: "smooth" });
+  // });
+  // $(".more").click(function () {
+  //   $(".target").toggleClass("hide");
+  // });
 };
